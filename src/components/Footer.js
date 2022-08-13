@@ -1,12 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import FacebookIcon from '@material-ui/icons/Facebook'
-import TwitterIcon from '@material-ui/icons/Twitter'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import GitHubIcon from '@material-ui/icons/GitHub'
-import RoomIcon from '@material-ui/icons/Room'
-import PhoneIcon from '@material-ui/icons/Phone'
-import MailIcon from '@material-ui/icons/Mail'
+// import FacebookIcon from '@material-ui/icons/Facebook'
+// import TwitterIcon from '@material-ui/icons/Twitter'
+// import LinkedInIcon from '@material-ui/icons/LinkedIn'
+// import GitHubIcon from '@material-ui/icons/GitHub'
+// import RoomIcon from '@material-ui/icons/Room'
+// import PhoneIcon from '@material-ui/icons/Phone'
+// import MailIcon from '@material-ui/icons/Mail'
+import HomeIcon from '@mui/icons-material/Home';
+import EmailIcon from '@mui/icons-material/Email';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { mobile } from '../responsive'
 
 const Container = styled.div`
@@ -123,9 +130,9 @@ const Footer = () => {
                 </Center>
                 <Right>
                     <Title>Contact</Title>
-                    <ContactItem><RoomIcon style={{ marginRight: "10px" }} />20, Taman Jurutera, 777000, Malaysia</ContactItem>
-                    <ContactItem><PhoneIcon style={{ marginRight: "10px" }} />+123 456 789</ContactItem>
-                    <ContactItem><MailIcon style={{ marginRight: "10px" }} />KhairiYusoff@KHAIRI.Inc</ContactItem>
+                    <ContactItem><HomeIcon style={{ marginRight: "10px" }} />20, Taman Jurutera, 777000, Malaysia</ContactItem>
+                    <ContactItem><LocalPhoneIcon style={{ marginRight: "10px" }} />+123 456 789</ContactItem>
+                    <ContactItem><EmailIcon style={{ marginRight: "10px" }} />KhairiYusoff@KHAIRI.Inc</ContactItem>
                     <Payment src="https://cdn-icons-png.flaticon.com/512/196/196543.png" />
                     <Payment src="https://cdn-icons-png.flaticon.com/128/196/196578.png" />
                     <Payment src="https://cdn-icons-png.flaticon.com/512/349/349228.png" />

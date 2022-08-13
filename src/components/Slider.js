@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+// import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
+// import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useState } from 'react';
 import { sliderItems } from "../data"
 import { mobile } from '../responsive';
@@ -64,12 +66,14 @@ padding: 50px;
 
 const Title = styled.h1`
 font-size: 70px;
+color: white;
 `
 
 const Description = styled.p`
 font-size: 20px;
 margin: 50px 0;
 font-weight: 500;
+color: white;
 `
 
 const Button = styled.button`
@@ -77,6 +81,7 @@ padding: 10px;
 font-size: 20px;
 background-color: transparent;
 cursor: pointer;
+color: white;
 `
 
 const Slider = () => {
@@ -95,7 +100,7 @@ const Slider = () => {
     return (
         <Container>
             <Arrow direction="left" onClick={() => handleClick("left")}>
-                <ArrowLeftIcon />
+                <ArrowBackIosIcon />
             </Arrow>
             <Wrapper slideIndex={slideIndex}>
                 {sliderItems.map(item => (
@@ -112,7 +117,7 @@ const Slider = () => {
                 ))}
             </Wrapper>
             <Arrow direction="right" onClick={() => handleClick("right")}>
-                <ArrowRightIcon />
+                <ArrowForwardIosIcon />
             </Arrow>
         </Container>
     )

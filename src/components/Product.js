@@ -1,7 +1,10 @@
 
-import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
-import SearchIcon from '@material-ui/icons/Search';
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+// import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+// import SearchIcon from '@material-ui/icons/Search';
+// import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import React from 'react'
 import styled from 'styled-components'
 
@@ -78,10 +81,10 @@ const Product = ({ item }) => {
                         <ShoppingCartOutlinedIcon />
                     </Icon>
                     <Icon>
-                        <SearchIcon />
+                        <SearchOutlinedIcon />
                     </Icon>
                     <Icon>
-                        <FavoriteBorderIcon />
+                        <FavoriteBorderOutlinedIcon />
                     </Icon>
                 </Info>
             </Container>

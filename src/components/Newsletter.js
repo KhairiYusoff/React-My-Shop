@@ -1,12 +1,13 @@
 import React from 'react'
-import SendIcon from '@material-ui/icons/Send';
+// import SendIcon from '@material-ui/icons/Send';
+import SendIcon from '@mui/icons-material/Send';
 import styled from 'styled-components';
 import { mobile } from '../responsive';
 
 
 const Container = styled.div`
-height: 60vh;
-background-color: #FCF8E8;
+height: 80vh;
+background-color: lavender;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -30,6 +31,7 @@ background-color: white;
 display: flex;
 justify-content: space-between;
 border: 1px solid;
+margin-bottom: 50px;
 ${mobile({ width: "70%" })}
 `
 
