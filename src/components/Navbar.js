@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import SearchIcon from '@mui/icons-material/Search'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import { mobile } from '../responsive'
 
 const Container = styled.div`
