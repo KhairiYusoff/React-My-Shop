@@ -21,8 +21,6 @@ ${mobile({ padding: "10px 0" })}
 
 const Left = styled.div`
 flex:1;
-display: flex;
-align-items: center;
 ${mobile({ flex: 2 })}
 `
 const Language = styled.span`
@@ -37,15 +35,18 @@ display: flex;
 align-items: center;
 margin-left: 20px;
 padding: 5px;
+width: 100%;
 `
 
 const Input = styled.input`
 border: none;
+width: 100%;
 ${mobile({ width: "50px" })}
 `
 const Center = styled.div`
-flex:1;
-text-align: center;
+display: flex;
+align-items: center;
+flex:3;
 ${mobile({ flex: 2 })}
 `
 
@@ -75,6 +76,9 @@ const Navbar = () => {
         <Container>
             <Wrapper>
                 <Left>
+                    <Logo>KhaiShop</Logo>
+                </Left>
+                <Center>
                     <Language>
                         EN
                     </Language>
@@ -82,8 +86,7 @@ const Navbar = () => {
                         <Input placeholder='search' />
                         <SearchIcon />
                     </SearchContainer>
-                </Left>
-                <Center><Logo>KhaiShop</Logo></Center>
+                </Center>
                 <Right>
                     <MenuItems>REGISTER</MenuItems>
                     <MenuItems>SIGN-IN</MenuItems>
