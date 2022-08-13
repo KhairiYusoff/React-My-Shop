@@ -61,11 +61,11 @@ height: 100%;
 
 const InfoContainer = styled.div`
 flex: 1;
-padding: 50px;
+padding: 20px;
 `
 
 const Title = styled.h1`
-font-size: 70px;
+font-size: 60px;
 color: white;
 `
 

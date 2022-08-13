@@ -21,6 +21,7 @@ ${mobile({ padding: "10px 0" })}
 
 const Left = styled.div`
 flex:1;
+text-align: center;
 ${mobile({ flex: 2 })}
 `
 const Language = styled.span`
