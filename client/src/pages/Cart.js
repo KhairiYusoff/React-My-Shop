@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Annoucements from '../components/Annoucements'
+
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import AddIcon from '@material-ui/icons/Add'
-import RemoveIcon from '@material-ui/icons/Remove'
+import RemoveIcon from '@mui/icons-material/Remove';
+import AddIcon from '@mui/icons-material/Add';
 import { mobile } from '../responsive'
 
 const Container = styled.div``
@@ -163,7 +163,7 @@ const Cart = () => {
         <div>
             <Container>
                 <Navbar />
-                <Annoucements />
+
                 <Wrapper>
                     <Title>YOUR BAG</Title>
                     <Top>

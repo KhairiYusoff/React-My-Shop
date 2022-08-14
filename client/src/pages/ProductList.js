@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Annoucements from '../components/Annoucements'
+import Announcements from '../components/Announcements'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Newsletter from '../components/Newsletter'
@@ -40,7 +40,7 @@ const ProductList = () => {
         <div>
             <Container>
                 <Navbar />
-                <Annoucements />
+                <Announcements />
                 <Title>Dresses</Title>
                 <FilterContainer>
                     <Filter>
