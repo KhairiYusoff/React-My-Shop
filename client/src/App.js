@@ -10,7 +10,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 
 const App = () => {
-  const user = true
+  const user = false
   return (
     <div>
       <Routes>
@@ -20,7 +20,6 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
         <Route path="/register" element={user ? <Navigate to="/" /> : <Register />} />
-
       </Routes>
 
     </div>
