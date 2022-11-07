@@ -38,6 +38,13 @@ const Products = ({ cat, filters, sort }) => {
         )
     }, [products, cat, filters])
 
+    useEffect(() => {
+        if (sort === 'newest') {
+            setFilteredProducts(prev =>
+                [...prev].sort((a, b) => a.createdAt - b.createdAt))
+        }
+    }, [sort])
+
     return (
         <div>
             <Container>
