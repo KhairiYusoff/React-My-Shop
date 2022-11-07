@@ -7,6 +7,9 @@ import Newsletter from '../components/Newsletter'
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 import { mobile } from '../responsive'
+import { useLocation } from 'react-router-dom'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 
 const Container = styled.div``
@@ -115,6 +118,19 @@ font-size:15px;
 ${mobile({ marginLeft: "10px" })}`
 
 const Product = () => {
+    const location = useLocation();
+    const id = location.pathname.split("/")[2];
+    const [product, setProduct] = useState({})
+
+    useEffect(() => {
+        const getProduct = async () => {
+            try {
+
+            } catch {
+
+            }
+        }
+    }, [id])
     return (
         <div>
             <Container>
